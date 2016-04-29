@@ -1,0 +1,37 @@
+[alias]
+	co = checkout
+	c = commit
+	s = status
+	b = branch
+	h = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	r = rebase
+	rc = rebase --continue
+	m = merge
+	dt = difftool
+	mt = mergetool
+	pr = pull --rebase
+	mnf = merge --no-ff
+[user]
+	name = Vladimir Burdukov
+	email = chippcheg@gmail.com
+[push]
+	default = simple
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[core]
+	excludesfile = /Users/chipp/.gitignore_global
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
