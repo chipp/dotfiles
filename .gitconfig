@@ -3,7 +3,7 @@
 	c = commit
 	s = status
 	b = branch
-	h = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	h = log --pretty=format:\"%C(red)%h %C(cyan)%ad %C(reset)| %s%C(bold yellow)%d %C(bold blue)[%an]\" --graph --date=format:'%Y-%m-%d %I:%M %p'
 	r = rebase
 	rc = rebase --continue
 	m = merge
