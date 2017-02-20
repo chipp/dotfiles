@@ -22,7 +22,7 @@ source ~/.zshrc
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
-brew install git coreutils gnupg mc imagemagick unrar
+brew install git coreutils gpg mc imagemagick unrar
 ```
 
 ## [RVM.io](https://rvm.io)
