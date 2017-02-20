@@ -7,6 +7,6 @@ function ac {
     return 1
   else
     echo "Found ${xcode_proj[1]}"
-    ~/.oh-my-zsh/custom/plugins/appcode/appcode "${xcode_proj[1]}"
+    /usr/local/bin/appcode "${xcode_proj[1]}"
   fi
 }

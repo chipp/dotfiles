@@ -1,5 +1,3 @@
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/chipp/.oh-my-zsh
 
@@ -8,7 +6,7 @@ export ZSH=/Users/chipp/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
-# DEFAULT_USER="chipp"
+DEFAULT_USER="chipp"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +50,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler osx rake ruby brew xcode appcode cp rake-fast rvm sudo keybase aws fastlane)
+plugins=(brew git bundler osx appcode fastlane github z pod rails dotenv xcversion)
 
 # User configuration
 
@@ -67,7 +65,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='subl -w'
+  export EDITOR='code -w'
 fi
 
 # Compilation flags
@@ -84,7 +82,12 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias ls='gls --color=auto'
+alias zshconfig="atom ~/.zshrc"
+alias reload="source ~/.zshrc"
+alias a='atom'
+alias c='code'
 
 if [[ -f ~/.dir_colors ]] ; then
     eval $(gdircolors -b ~/.dir_colors)
@@ -95,4 +98,12 @@ fi
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/sbin:$PATH:$HOME/.rvm/bin"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# export NVM_DIR="$HOME/.nvm"
+# . "$(brew --prefix nvm)/nvm.sh"
+#export MATCH_FORCE_ENTERPRISE=true
+
+ulimit -n 4096
+export XCODE_INSTALL_USER="chippcheg@gmail.com"
