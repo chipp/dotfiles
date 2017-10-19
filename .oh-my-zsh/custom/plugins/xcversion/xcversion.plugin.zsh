@@ -14,8 +14,9 @@ function xc {
 function _xc() {
   local app
   if [[ -e ".xcversion" ]] then
-    xcode="Xcode-$(cat .xcversion).app"
-    if [[ -e "/Applications/$xcode" ]] then
+    version=$(cat .xcversion)
+    xcode=$(/usr/bin/env ruby $ZSH/custom/plugins/xcversion/xcversion.rb $version)
+    if [[ -e $xcode ]] then
       app="-a$xcode"
     fi
   fi
