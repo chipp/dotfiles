@@ -1,3 +1,5 @@
+# code of Installer and etc. was taken from https://github.com/KrauseFx/xcode-install
+
 require 'pathname'
 require 'fileutils'
 
