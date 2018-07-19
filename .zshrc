@@ -9,7 +9,6 @@ ZSH_THEME="agnoster"
 DEFAULT_USER="chipp"
 ZSH_TMUX_AUTOSTART="true"
 ZSH_TMUX_ITERM2="true"
-ZSH_TMUX_AUTOCONNECT="true"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,7 +52,19 @@ ZSH_TMUX_AUTOCONNECT="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rvm tmux brew git bundler osx appcode fastlane github z pod xcversion docker rustup rust cargo)
+plugins=(
+  tmux
+  brew
+  git
+  osx
+  appcode
+  fastlane
+  z
+  pod
+  xcversion
+  docker
+  github
+)
 
 # User configuration
 
@@ -89,7 +100,6 @@ fi
 alias ls='gls --color=auto'
 alias zshconfig="code ~/.zshrc"
 alias reload="source ~/.zshrc"
-alias a='atom'
 alias c='code'
 alias ezio='ssh -t ezio "cd ~/web/; zsh"'
 alias ds="docker-compose"
@@ -111,15 +121,18 @@ export PATH="/usr/local/sbin:$PATH"
 source $HOME/.cargo/env
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-# export NVM_DIR="$HOME/.nvm"
-# . "$(brew --prefix nvm)/nvm.sh"
-#export MATCH_FORCE_ENTERPRISE=true
 
 ulimit -n 4096
 export XCODE_INSTALL_USER="chippcheg@gmail.com"
 
 PATH="/Users/chipp/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PATH="/Users/chipp/.iterm2${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/chipp/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/Users/chipp/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/Users/chipp/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/chipp/perl5"; export PERL_MM_OPT;
+
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+
+export NVM_DIR="$HOME/.nvm"
+alias load_nvm=". \"/usr/local/opt/nvm/nvm.sh\""

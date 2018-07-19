@@ -1,0 +1,35 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "extensions.autoUpdate": false,
+  "editor.fontSize": 20,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "PragmataPro, Menlo, Monaco, 'Courier New', monospace",
+  "files.associations": {
+    "Fastfile": "ruby",
+    "Matchfile": "ruby",
+    "Pluginfile": "ruby",
+    "*.podspec": "ruby",
+    "Podfile": "ruby",
+    "Gymfile": "ruby",
+    "Appfile": "ruby"
+  },
+  "editor.wordWrap": "off",
+  "editor.minimap.enabled": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#333333",
+    "statusBar.noFolderBackground": "#333333"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.multiCursorModifier": "alt",
+  "[rust]": {
+    "editor.tabSize": 4
+  },
+  "workbench.statusBar.feedback.visible": false,
+  "rust.goto_def_racer_fallback": true,
+  "rust-client.channel": "nightly",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": false,
+  // "rust-client.logToFile": true
+}

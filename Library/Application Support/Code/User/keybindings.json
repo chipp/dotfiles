@@ -1,0 +1,27 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+u",
+    "command": "workbench.action.tasks.test"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "args": "cargo run"
+  },
+  {
+    "key": "ctrl+alt+cmd+down",
+    "command": "extension.changeCase.camel",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "subwordNavigation.cursorSubwordLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "subwordNavigation.cursorSubwordRight",
+    "when": "editorTextFocus"
+  }
+]
