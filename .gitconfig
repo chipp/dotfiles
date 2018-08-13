@@ -48,7 +48,7 @@
 [difftool "appcode"]
 	cmd = /usr/local/bin/appcode diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
 [core]
-	excludesfile = /Users/chipp/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [filter "lfs"]
 [credential]
 	helper = osxkeychain
@@ -59,8 +59,7 @@
 	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 [commit]
-	template = /Users/chipp/.stCommitMsg
-	gpgsign = true
+	gpgSign = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
