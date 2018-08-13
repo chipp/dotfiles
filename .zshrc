@@ -64,6 +64,7 @@ plugins=(
   xcversion
   docker
   github
+  gpg-agent
 )
 
 # User configuration
@@ -125,14 +126,12 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 ulimit -n 4096
 export XCODE_INSTALL_USER="chippcheg@gmail.com"
 
-PATH="/Users/chipp/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PATH="/Users/chipp/.iterm2${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/chipp/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/chipp/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/chipp/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/chipp/perl5"; export PERL_MM_OPT;
+PATH="${HOME}/.iterm2${PATH:+:${PATH}}"; export PATH;
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 export NVM_DIR="$HOME/.nvm"
 alias load_nvm=". \"/usr/local/opt/nvm/nvm.sh\""
+
+source "$HOME/.profile"
+export GPG_TTY=$(tty)
