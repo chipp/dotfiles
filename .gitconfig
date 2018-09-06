@@ -1,12 +1,13 @@
 [alias]
 	co = checkout
-	c = commit -S
+	c = commit
 	s = status
 	b = branch
 	h = log --pretty=format:\"%C(red)%h %C(cyan)%ad %C(reset)| %s%C(bold yellow)%d %C(bold blue)[%an]\" --graph --date=format:'%Y-%m-%d %I:%M %p'
 	r = rebase
 	rc = rebase --continue
 	m = merge
+	d = diff
 	ds = diff --staged
 	dt = difftool
 	dts = difftool --staged
@@ -19,8 +20,8 @@
 	dtst = difftool stash^!
 [user]
 	name = Vladimir Burdukov
-	email = chippcheg@gmail.com
-	signingkey = 3F152215
+	email = vladimir_burdukov@epam.com
+	signingkey = 2503E0D3082F66BB40B3E8B123B029943F152215
 [push]
 	default = current
 [pull]
@@ -58,8 +59,6 @@
 [mergetool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
-[commit]
-	gpgSign = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
