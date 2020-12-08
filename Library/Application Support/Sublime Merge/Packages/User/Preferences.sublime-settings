@@ -1,0 +1,9 @@
+{
+	"theme": "Merge Dark.sublime-theme",
+	"font_face": "PragmataPro Liga",
+	"font_size": 14,
+	"git_binary": "/usr/local/bin/hub",
+	/*"editor_path": "/usr/local/bin/code",*/
+	/*"editor_argument_format": "-g ${file}:${line}:${col}",*/
+	"side_bar_layout": "commit_graph_as_column",
+}
