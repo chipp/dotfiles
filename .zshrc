@@ -5,10 +5,8 @@ export ZSH=/Users/chipp/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
 DEFAULT_USER="chipp"
-ZSH_TMUX_AUTOSTART="true"
-ZSH_TMUX_ITERM2="true"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,18 +51,17 @@ ZSH_TMUX_ITERM2="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  tmux
   brew
   git
   osx
+  xcode
   appcode
   fastlane
   z
   pod
-  xcversion
   docker
   github
-  gpg-agent
+  zsh-autosuggestions
 )
 
 # User configuration
@@ -102,11 +99,13 @@ alias ls='gls --color=auto'
 alias zshconfig="code ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias c='code'
+alias s='subl'
 alias ezio='ssh -t ezio "cd ~/web/; zsh"'
 alias ds="docker-compose"
 alias dsl="docker-compose logs -f"
 alias dsps="docker-compose ps"
 alias killsim="launchctl remove com.apple.CoreSimulator.CoreSimulatorService"
+alias sm="smerge ."
 
 if [[ -f ~/.dir_colors ]] ; then
     eval $(gdircolors -b ~/.dir_colors)
@@ -117,21 +116,22 @@ fi
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH="/usr/local/sbin:$PATH"
-
-source $HOME/.cargo/env
+export PATH="/usr/local/opt/python/libexec/bin:/usr/local/sbin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-ulimit -n 4096
-export XCODE_INSTALL_USER="chippcheg@gmail.com"
-
 PATH="${HOME}/.iterm2${PATH:+:${PATH}}"; export PATH;
 
+export XCODE_INSTALL_USER="chippcheg@gmail.com"
+
+source $HOME/.cargo/env
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+export CC_x86_64_unknown_linux_musl=x86_64-linux-musl-gcc
+export CC_armv7_unknown_linux_gnueabihf=/Volumes/gcc/x-tools/arm-rpi3-linux-gnueabihf/bin/arm-rpi3-linux-gnueabihf-gcc
 
-export NVM_DIR="$HOME/.nvm"
-alias load_nvm=". \"/usr/local/opt/nvm/nvm.sh\""
+#export CURL_SSL_BACKEND=secure-transport
 
-source "$HOME/.profile"
-export GPG_TTY=$(tty)
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
