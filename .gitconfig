@@ -1,26 +1,31 @@
 [alias]
 	co = checkout
+	sw = switch
+	re = restore
 	c = commit
+	cc = commit -C HEAD --amend
 	s = status
 	b = branch
 	h = log --pretty=format:\"%C(red)%h %C(cyan)%ad %C(reset)| %s%C(bold yellow)%d %C(bold blue)[%an]\" --graph --date=format:'%Y-%m-%d %I:%M %p'
 	r = rebase
 	rc = rebase --continue
 	m = merge
-	d = diff
-	ds = diff --staged
+	d = diff --word-diff
+	ds = diff --staged --word-diff
 	dt = difftool
 	dts = difftool --staged
 	mt = mergetool
 	pro = pull-request -o
 	cm = checkout master
+	ct = checkout trunk
 	pm = pull origin master
 	pf = push --force-with-lease
+	pp = pull --rebase
 	bb = browse
 	dtst = difftool stash^!
 [user]
 	name = Vladimir Burdukov
-	email = vladimir_burdukov@epam.com
+	email = chippcheg@gmail.com
 	signingkey = 2503E0D3082F66BB40B3E8B123B029943F152215
 [push]
 	default = current
@@ -34,31 +39,22 @@
 	tool = Kaleidoscope
 [difftool]
 	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = smerge
 [mergetool]
 	prompt = false
-[merge]
-	tool = Kaleidoscope
+[mergetool "smerge"]
+	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = true
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "appcode"]
-	cmd = /usr/local/bin/appcode merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
-	trustExitCode = true
-[difftool "appcode"]
-	cmd = /usr/local/bin/appcode diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
 [core]
 	excludesfile = ~/.gitignore_global
-[filter "lfs"]
 [credential]
 	helper = osxkeychain
-[difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -66,10 +62,5 @@
 	process = git-lfs filter-process
 [gpg]
 	program = gpg
-[mergetool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
-	trustExitCode = false
-[difftool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
 [hub]
 	protocol = ssh
