@@ -17,6 +17,14 @@ cp -r $TMPDIR/dotfiles/.dir_colors $TMPDIR/dotfiles/.gemrc $TMPDIR/dotfiles/.git
 source ~/.zshrc
 ```
 
+## [p10k](https://github.com/romkatv/powerlevel10k)
+
+TBD
+
+## [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+TBD
+
 ## Homebrew – [brew.sh](http://brew.sh)
 
 ```shell
