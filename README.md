@@ -42,7 +42,7 @@ plugins=(zsh-autosuggestions)
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
-brew install git git-lfs hub coreutils gpg mc imagemagick jq xctool
+brew install git git-lfs hub coreutils gpg mc imagemagick jq
 ```
 
 ## [RVM.io](https://rvm.io)
