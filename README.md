@@ -23,10 +23,18 @@ source ~/.zshrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
+Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
+
 ## [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 ```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
+
+```
+plugins=(zsh-autosuggestions)
 ```
 
 ## Homebrew – [brew.sh](http://brew.sh)
