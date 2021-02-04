@@ -42,12 +42,17 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 ```
 
-## [Xcode One Dark](https://github.com/bojan/xcode-one-dark)
+## Xcode
 
 ```shell
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
-curl -o ~/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme \
-  https://raw.githubusercontent.com/bojan/xcode-one-dark/master/One%20Dark.xccolortheme
+mkdir -p ~/Library/Developer/Xcode/UserData/KeyBindings
+
+cp Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+cp Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/
+
+defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "One Dark.xccolortheme"
+defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -int 1
 ```
 
 ## Sublime Text and Sublime Merge
