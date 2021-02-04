@@ -14,35 +14,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 cp $TMPDIR/dotfiles/.zshrc ~/
 cp -r $TMPDIR/dotfiles/.oh-my-zsh/custom/plugins/* ~/.oh-my-zsh/custom/plugins/
 cp -r $TMPDIR/dotfiles/.dir_colors $TMPDIR/dotfiles/.gemrc $TMPDIR/dotfiles/.gitconfig $TMPDIR/dotfiles/.gitignore_global ~/
-source ~/.zshrc
-```
-
-## [p10k](https://github.com/romkatv/powerlevel10k)
-
-```shell
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-
-Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
-
-## [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-
-```shell
+cp -r $TMPDIR/dotfiles/.p10k.zsh ~/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
-
-```
-plugins=(zsh-autosuggestions)
+source ~/.zshrc
 ```
 
 ## Homebrew – [brew.sh](http://brew.sh)
 
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
-brew install git git-lfs hub coreutils gpg mc imagemagick jq
+brew install git git-lfs hub coreutils gpg mc imagemagick jq rust-analyzer
 ```
 
 ## [RVM.io](https://rvm.io)

@@ -62,6 +62,7 @@ plugins=(
   docker
   github
   zsh-autosuggestions
+  cargo
 )
 
 # User configuration
