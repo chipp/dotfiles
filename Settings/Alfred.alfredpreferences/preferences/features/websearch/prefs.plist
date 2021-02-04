@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>209C2FF3-83D5-4F12-8265-4524B793948E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>maps</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Search Yandex Maps for '{query}'</string>
+			<key>url</key>
+			<string>https://maps.yandex.ru/?text={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>305E287D-E515-4CEC-BE91-59D7F8F8C81E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>mac</string>
+			<key>spaces</key>
+			<string>-</string>
+			<key>text</key>
+			<string>MacMillan</string>
+			<key>url</key>
+			<string>https://www.macmillandictionary.com/search/american/direct/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>A1E2DE7C-697D-403E-95B5-6A38EBF89C82</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>crate</string>
+			<key>text</key>
+			<string>crates.io</string>
+			<key>url</key>
+			<string>https://crates.io/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
+</dict>
+</plist>
