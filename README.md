@@ -20,6 +20,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 source ~/.zshrc
 ```
 
+## ssh config
+
+```shell
+mkdir -m 700 ~/.ssh
+cp $TMPDIR/dotfiles/ssh_config ~/.ssh/config
+```
+
 ## Homebrew – [brew.sh](http://brew.sh)
 
 ```shell
