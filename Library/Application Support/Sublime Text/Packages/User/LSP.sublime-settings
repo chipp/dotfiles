@@ -2,7 +2,11 @@
 {
 	"clients": {
 		"rust-analyzer": {
+			"enabled": true,
+		},
+		"ruby":
+		{
 			"enabled": true
-		}
-	}
+		},
+	},
 }

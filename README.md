@@ -60,6 +60,17 @@ curl -o ~/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolort
   https://raw.githubusercontent.com/bojan/xcode-one-dark/master/One%20Dark.xccolortheme
 ```
 
+## Sublime Text and Sublime Merge
+
+```shell
+mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/User/
+mkdir -p ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
+
+cp -r $TMPDIR/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/
+Packages/User/*
+cp -r $TMPDIR/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/*
+```
+
 # additional links
 
 - [iTerm 2 Peppermint theme](https://github.com/dotzero/iTerm-2-Peppermint)

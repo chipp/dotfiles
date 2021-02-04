@@ -5,10 +5,13 @@
 	],
 	"installed_packages":
 	[
+		"JSON Reindent",
 		"LSP",
 		"LSP-dockerfile",
+		"One Dark Material - Theme",
 		"Package Control",
 		"Rust Enhanced",
 		"RustFmt",
+		"Swift",
 	],
 }

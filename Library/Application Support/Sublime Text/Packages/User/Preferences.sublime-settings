@@ -1,11 +1,12 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
-	"font_face": "PragmataPro Liga",
+	"font_face": "PragmataPro Mono Liga",
 	"font_size": 20,
 	"ignored_packages":
 	[
 		"Rust",
 		"Vintage",
 	],
+	"theme": "OneDarkMaterial.sublime-theme",
 }
