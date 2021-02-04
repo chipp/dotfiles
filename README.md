@@ -66,9 +66,8 @@ curl -o ~/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolort
 mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/User/
 mkdir -p ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 
-cp -r $TMPDIR/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/
-Packages/User/*
-cp -r $TMPDIR/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/*
+cp -r $TMPDIR/dotfiles/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
+cp -r $TMPDIR/dotfiles/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 ```
 
 # additional links
