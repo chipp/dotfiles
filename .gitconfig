@@ -8,39 +8,42 @@
 	b = branch
 	h = log --pretty=format:\"%C(red)%h %C(cyan)%ad %C(reset)| %s%C(bold yellow)%d %C(bold blue)[%an]\" --graph --date=format:'%Y-%m-%d %I:%M %p'
 	r = rebase
+	ra = rebase --abort
 	rc = rebase --continue
-	m = merge
 	d = diff --word-diff
 	ds = diff --staged --word-diff
 	dt = difftool
 	dts = difftool --staged
 	mt = mergetool
-	pro = pull-request -o
-	cm = checkout master
-	ct = checkout trunk
-	pm = pull origin master
 	pf = push --force-with-lease
-	pp = pull --rebase
-	bb = browse
-	dtst = difftool stash^!
 [user]
 	name = Vladimir Burdukov
 	email = chippcheg@gmail.com
 	signingkey = 2503E0D3082F66BB40B3E8B123B029943F152215
+
+[commit]
+	gpgsign = true
+
 [push]
 	default = current
 [pull]
 	rebase = true
+
 [status]
 	showStash = true
 [stash]
 	showPatch = true
+
 [diff]
 	tool = Kaleidoscope
 [difftool]
 	prompt = false
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+
 [merge]
 	tool = smerge
 [mergetool]
@@ -48,19 +51,19 @@
 [mergetool "smerge"]
 	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
+
 [core]
 	excludesfile = ~/.gitignore_global
 [credential]
 	helper = osxkeychain
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
 	process = git-lfs filter-process
+
 [gpg]
-	program = gpg
+	program = /usr/local/bin/gpg 
 [hub]
 	protocol = ssh

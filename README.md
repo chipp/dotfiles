@@ -23,7 +23,7 @@ source ~/.zshrc
 ## ssh config
 
 ```shell
-mkdir -m 700 ~/.ssh
+mkdir -m 700 -p ~/.ssh
 cp $TMPDIR/dotfiles/ssh_config ~/.ssh/config
 ```
 
@@ -32,7 +32,7 @@ cp $TMPDIR/dotfiles/ssh_config ~/.ssh/config
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
-brew install git git-lfs hub coreutils gpg mc imagemagick jq rust-analyzer
+brew install git git-lfs hub coreutils gpg mc imagemagick jq rust-analyzer pinentry-mac
 ```
 
 ## [RVM.io](https://rvm.io)
@@ -40,6 +40,18 @@ brew install git git-lfs hub coreutils gpg mc imagemagick jq rust-analyzer
 ```shell
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
+```
+
+## GPG
+
+```shell
+mkdir -m 700 -p ~/.gnupg
+
+cp .gnupg/gpg.conf .gnupg/gpg-agent.conf ~/.gnupg
+killall gpg-agent
+
+gpg --import gpg.private.key
+gpg --import-ownertrust $(TMPDIR)/dotfiles/.gnupg/ownertrust-gpg.txt
 ```
 
 ## Xcode
