@@ -34,6 +34,32 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>6E4E3788-4400-425E-A1BB-B43DF3427C2B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>translate</string>
+			<key>text</key>
+			<string>Yandex Translate: '{query}'</string>
+			<key>url</key>
+			<string>https://translate.yandex.ru/?text={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>71FFD366-5C45-4AF1-9892-6FD8E15C4A29</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>translate</string>
+			<key>text</key>
+			<string>Google Translate: '{query}'</string>
+			<key>url</key>
+			<string>https://translate.google.com/?text={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>A1E2DE7C-697D-403E-95B5-6A38EBF89C82</key>
 		<dict>
 			<key>enabled</key>
