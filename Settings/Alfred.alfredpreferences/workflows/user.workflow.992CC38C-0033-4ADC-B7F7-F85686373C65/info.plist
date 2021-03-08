@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.epam.connect</string>
-	<key>category</key>
-	<string>Productivity</string>
+	<string>by.burdukov.search</string>
 	<key>connections</key>
 	<dict>
 		<key>496748FB-A16F-4FE3-AC91-E1D21F32650A</key>
@@ -15,6 +13,16 @@
 				<string>B22843BC-C788-4A0B-B984-FC6BFF228BCC</string>
 				<key>modifiers</key>
 				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>484C9261-D936-4AE6-A348-D1CF9D030E18</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -32,6 +40,25 @@
 	<string>Telescope</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B22843BC-C788-4A0B-B984-FC6BFF228BCC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -86,27 +113,34 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string></string>
-				<key>utf8</key>
-				<true/>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>B22843BC-C788-4A0B-B984-FC6BFF228BCC</string>
+			<string>484C9261-D936-4AE6-A348-D1CF9D030E18</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>484C9261-D936-4AE6-A348-D1CF9D030E18</key>
+		<dict>
+			<key>xpos</key>
+			<integer>515</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
 		<key>496748FB-A16F-4FE3-AC91-E1D21F32650A</key>
 		<dict>
 			<key>xpos</key>
@@ -117,9 +151,9 @@
 		<key>B22843BC-C788-4A0B-B984-FC6BFF228BCC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>510</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>50</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -127,8 +161,10 @@
 		<key>CURL_SSL_BACKEND</key>
 		<string>secure-transport</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string></string>
+	<string>1.0</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

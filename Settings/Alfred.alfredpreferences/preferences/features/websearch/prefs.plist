@@ -67,7 +67,7 @@
 			<key>keyword</key>
 			<string>crate</string>
 			<key>text</key>
-			<string>crates.io</string>
+			<string>Search '{query}' on crates.io</string>
 			<key>url</key>
 			<string>https://crates.io/search?q={query}</string>
 			<key>utf8</key>
