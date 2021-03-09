@@ -60,8 +60,8 @@ gpg --import-ownertrust $HOME/dotfiles/.gnupg/ownertrust-gpg.txt
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
 mkdir -p ~/Library/Developer/Xcode/UserData/KeyBindings
 
-cp Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-cp Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/
+cp $HOME/dotfiles/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+cp $HOME/dotfiles/Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/
 
 defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "One Dark.xccolortheme"
 defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -int 1
@@ -73,8 +73,8 @@ defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -int 1
 mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/User/
 mkdir -p ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 
-cp -r $TMPDIR/dotfiles/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
-cp -r $TMPDIR/dotfiles/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
+cp -r $HOME/dotfiles/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
+cp -r $HOME/dotfiles/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 ```
 
 # additional links
