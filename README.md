@@ -4,18 +4,18 @@
 
 ```shell
 xcode-select --install
-git clone https://github.com/chipp/dotfiles $TMPDIR/dotfiles
+git clone https://github.com/chipp/dotfiles $HOME/dotfiles
 ```
 
 ## [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp $TMPDIR/dotfiles/.zshrc ~/
-cp -r $TMPDIR/dotfiles/.oh-my-zsh/custom/plugins/* ~/.oh-my-zsh/custom/plugins/
-cp -r $TMPDIR/dotfiles/.dir_colors $TMPDIR/dotfiles/.gemrc $TMPDIR/dotfiles/.gitconfig $TMPDIR/dotfiles/.gitignore_global ~/
+cp $HOME/dotfiles/.zshrc ~/
+cp -r $HOME/dotfiles/.oh-my-zsh/custom/plugins/* ~/.oh-my-zsh/custom/plugins/
+cp -r $HOME/dotfiles/.dir_colors $HOME/dotfiles/.gemrc $HOME/dotfiles/.gitconfig $HOME/dotfiles/.gitignore_global ~/
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-cp -r $TMPDIR/dotfiles/.p10k.zsh ~/
+cp -r $HOME/dotfiles/.p10k.zsh ~/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc
 ```
@@ -24,7 +24,7 @@ source ~/.zshrc
 
 ```shell
 mkdir -m 700 -p ~/.ssh
-cp $TMPDIR/dotfiles/ssh_config ~/.ssh/config
+cp $HOME/dotfiles/ssh_config ~/.ssh/config
 ```
 
 ## Homebrew – [brew.sh](http://brew.sh)
@@ -51,7 +51,7 @@ cp .gnupg/gpg.conf .gnupg/gpg-agent.conf ~/.gnupg
 killall gpg-agent
 
 gpg --import gpg.private.key
-gpg --import-ownertrust $(TMPDIR)/dotfiles/.gnupg/ownertrust-gpg.txt
+gpg --import-ownertrust $HOME/dotfiles/.gnupg/ownertrust-gpg.txt
 ```
 
 ## Xcode
