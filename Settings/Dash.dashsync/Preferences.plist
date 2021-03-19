@@ -107,42 +107,47 @@
 			<key>http://kapeli.com/feeds/Apple_API_Reference.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-02-04T09:36:40Z</date>
+				<date>2021-03-10T19:42:53Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Docker.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-29T08:18:35Z</date>
+				<date>2021-03-10T19:42:32Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Go.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-29T08:18:12Z</date>
+				<date>2021-03-10T19:42:37Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTML.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-02-12T16:08:06Z</date>
+				<date>2021-03-10T19:42:32Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2021-03-11T12:06:51Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/NodeJS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-02-21T21:10:59Z</date>
+				<date>2021-03-10T19:42:28Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Python_3.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-27T10:13:41Z</date>
+				<date>2021-03-10T19:42:41Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-27T10:13:52Z</date>
+				<date>2021-03-10T19:42:51Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Rust.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-29T08:18:32Z</date>
+				<date>2021-03-10T19:42:39Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
