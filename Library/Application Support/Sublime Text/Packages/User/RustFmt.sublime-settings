@@ -1,5 +1,5 @@
 // RustFmt Settings - User
 {
-	"executable": ["$HOME/.cargo/bin/rustfmt", "--edition", "2018"],
+	"executable": ["/Users/chipp/.cargo/bin/rustfmt", "--edition", "2018"],
 	"error_messages": false
 }

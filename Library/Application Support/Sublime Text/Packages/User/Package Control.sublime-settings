@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"Dockerfile Syntax Highlighting",
 		"JSON Reindent",
 		"LSP",
 		"LSP-dockerfile",
@@ -13,5 +14,6 @@
 		"Rust Enhanced",
 		"RustFmt",
 		"Swift",
+		"TOML",
 	],
 }
