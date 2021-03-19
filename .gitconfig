@@ -16,6 +16,7 @@
 	dts = difftool --staged
 	mt = mergetool
 	pf = push --force-with-lease
+	pp = pull --prune
 [user]
 	name = Vladimir Burdukov
 	email = chippcheg@gmail.com
@@ -67,3 +68,5 @@
 	program = /usr/local/bin/gpg 
 [hub]
 	protocol = ssh
+[init]
+	defaultBranch = main
