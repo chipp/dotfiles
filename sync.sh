@@ -84,7 +84,6 @@ upload() {
     info "Pushing local changes..."
     git push > /dev/null
     info "Pushed local changes"
-    echo
 }
 
 download
