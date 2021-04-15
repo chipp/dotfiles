@@ -124,6 +124,11 @@
 				<key>date</key>
 				<date>2021-03-10T19:42:32Z</date>
 			</dict>
+			<key>http://kapeli.com/feeds/JavaScript.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2021-03-28T13:00:40Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
 			<dict>
 				<key>date</key>
