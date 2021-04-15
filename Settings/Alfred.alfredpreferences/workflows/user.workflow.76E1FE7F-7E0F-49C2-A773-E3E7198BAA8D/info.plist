@@ -19,6 +19,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A351004F-F322-49D9-9B24-BF8E72EE352C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CAF7D1E6-3211-4AB2-9397-367071B1EE46</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CAF7D1E6-3211-4AB2-9397-367071B1EE46</key>
 		<array>
 			<dict>
@@ -43,50 +56,6 @@
 	<string>Bluetooth</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./blutil $1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>8B3CA217-F87E-49A5-8D05-C4C5F0F8C2F3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:text}</string>
-				<key>title</key>
-				<string>{var:title}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>67F002F5-CBB8-49A2-8001-6664AA0C380A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -136,6 +105,81 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>11</integer>
+				<key>hotmod</key>
+				<integer>1572864</integer>
+				<key>hotstring</key>
+				<string>B</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A351004F-F322-49D9-9B24-BF8E72EE352C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./blutil $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8B3CA217-F87E-49A5-8D05-C4C5F0F8C2F3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:text}</string>
+				<key>title</key>
+				<string>{var:title}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>67F002F5-CBB8-49A2-8001-6664AA0C380A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -144,23 +188,30 @@
 		<key>67F002F5-CBB8-49A2-8001-6664AA0C380A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>640</integer>
+			<integer>960</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>350</integer>
 		</dict>
 		<key>8B3CA217-F87E-49A5-8D05-C4C5F0F8C2F3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>350</integer>
+		</dict>
+		<key>A351004F-F322-49D9-9B24-BF8E72EE352C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>105</integer>
+			<key>ypos</key>
+			<integer>350</integer>
 		</dict>
 		<key>CAF7D1E6-3211-4AB2-9397-367071B1EE46</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>350</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
