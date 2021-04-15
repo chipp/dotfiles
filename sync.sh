@@ -35,7 +35,7 @@ download() {
     fi
 
     info "Pulling remote changes..."
-    git pull --rebase > /dev/null
+    git pull --rebase
     info "Pulled remote changes"
     echo
 
@@ -72,10 +72,12 @@ commit() {
     files=("${unstaged[@]}" "${staged[@]}")
     files=($(printf "%s\n" "${files[@]}" | sort -u))
 
-    info "Creating commit with files:"
+    info "Commiting files:"
     echo $(printf "%s\n" "${files[@]}")
+    echo
 
     git commit -m "Automatic update $(date)"
+    echo
 }
 
 upload() {
