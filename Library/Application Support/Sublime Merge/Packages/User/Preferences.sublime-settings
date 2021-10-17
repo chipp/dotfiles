@@ -1,6 +1,6 @@
 {
 	"theme": "Merge Dark.sublime-theme",
-	"font_face": "PragmataPro Mono Liga",
+	"font_face": "PragmataPro Liga",
 	"font_size": 14,
 	"git_binary": "/usr/local/bin/hub",
 	/*"editor_path": "/usr/local/bin/code",*/

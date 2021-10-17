@@ -1,0 +1,8 @@
+// List all your connections to DBs here
+{
+    "connections": {
+        "type"    : "sqlite",
+        "database": "/Users/vladimir_burdukov/d/i/p/LT-RU/LT-RU/words.sqlite",
+    },
+    "default": null
+}

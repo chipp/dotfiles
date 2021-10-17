@@ -1,6 +1,7 @@
-export ZSH=/Users/chipp/.oh-my-zsh
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/vladimir_burdukov/.oh-my-zsh
 
-DEFAULT_USER="chipp"
+DEFAULT_USER="vladimir_burdukov"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
@@ -13,7 +14,7 @@ plugins=(
   z
   pod
   docker
-  github
+  # github
   zsh-autosuggestions
   cargo
 )
@@ -44,7 +45,7 @@ elif [[ -f /etc/DIR_COLORS ]] ; then
     eval $(gdircolors -b /etc/DIR_COLORS)
 fi
 
-export GPG_TTY=$(tty)
+export GPG_TTY
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

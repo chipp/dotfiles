@@ -1,19 +1,31 @@
 // Settings in here override those in "LSP/LSP.sublime-settings"
 {
+	"lsp_format_on_save": true,
+	"log_debug": true,
+	"log_stderr": true,
 	"clients": {
 		"rust-analyzer": {
 			"enabled": true,
+			"command": [
+				"/usr/local/bin/rust-analyzer"	
+			],
+			"initializationOptions": {
+				"cargo": {
+					"loadOutDirsFromCheck": true,
+					// "target": "armv7-unknown-linux-musleabihf"
+				},
+				"procMacro": {
+					"enable": true,
+				},
+			},
 		},
 		"ruby":
 		{
-			"enabled": true,
+			"enabled": false,
 		},
-		"clangd":
+		"pyls":
 		{
 			"enabled": true,
-			"command": [
-				"/Applications/Xcode_12.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd"
-			]
 		},
 	},
 }

@@ -17,9 +17,10 @@
 	mt = mergetool
 	pf = push --force-with-lease
 	pp = pull --prune
+	cp = cherry-pick
 [user]
 	name = Vladimir Burdukov
-	email = chippcheg@gmail.com
+	email = vladimir_burdukov@epam.com
 	signingkey = 2503E0D3082F66BB40B3E8B123B029943F152215
 
 [commit]

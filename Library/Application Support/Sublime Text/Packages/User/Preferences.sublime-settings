@@ -6,6 +6,9 @@
 	"ignored_packages":
 	[
 		"Rust",
+		"RustFmt",
 		"Vintage",
 	],
+	"theme": "Default Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
 }

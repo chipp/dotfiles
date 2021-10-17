@@ -1,3 +1,10 @@
 {
-	"rust_env": {"PATH": "$PATH:$HOME/.cargo/bin"}
+	"rust_env": {"PATH": "$PATH:$HOME/.cargo/bin",},
+	// "cargo_build":
+	// {
+	// 	"defaults":
+	// 	{
+	// 		"target_triple": "armv7-unknown-linux-musleabihf"
+	// 	}
+	// }
 }

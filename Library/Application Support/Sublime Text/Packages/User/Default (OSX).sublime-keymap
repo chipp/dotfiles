@@ -1,9 +1,24 @@
 [
 	{ "keys": ["alt+up"], "command": "swap_line_up" },
 	{ "keys": ["alt+down"], "command": "swap_line_down" },
+    { "keys": ["super+alt+down"], "command": "duplicate_line" },
 	{ "keys": ["f2"], "command": "lsp_symbol_rename" },
-  	{ "keys": ["f12"], "command": "lsp_symbol_definition" },
   	{ "keys": ["super+ctrl+j"], "command": "lsp_symbol_definition" },
   	{ "keys": ["super+option+r"], "command": "lsp_document_symbols" },
-  	{ "keys": ["super+option+h"], "command": "lsp_hover"}
+  	{ "keys": ["super+option+h"], "command": "lsp_hover"},
+    {
+        "command": "lsp_code_actions",
+        "keys": [
+            "super+."
+        ],
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "codeActionProvider"
+            }
+        ]
+    },
+    { "keys": ["ctrl+super+left"], "command": "jump_back" },
+    { "keys": ["ctrl+super+right"], "command": "jump_forward" },
 ]

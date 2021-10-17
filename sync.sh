@@ -81,12 +81,25 @@ copy() {
 }
 
 commit() {
-    unstaged=$(git diff --name-only)
-    staged=$(git diff --staged --name-only)
-    if [[ ${#unstaged[@]} -eq 0 && ${#staged[@]} -eq 0 ]];
+    IFS=$'\0'
+    untracked=($(git ls-files --others --exclude-standard -z))
+    untracked[-1]=()
+
+    unstaged=($(git diff --name-only -z))
+    unstaged[-1]=()
+
+    staged=($(git diff --staged --name-only -z))
+    staged[-1]=()
+
+    if [[ ${#untracked[@]} -eq 0 && ${#unstaged[@]} -eq 0 && ${#staged[@]} -eq 0 ]];
     then
         warning "There are no local changes, nothing to upload"
         exit 0
+    fi
+
+    if [[ ${#untracked[@]} -ne 0 ]];
+    then
+        git add ${untracked[@]}
     fi
 
     if [[ ${#unstaged[@]} -ne 0 ]];
@@ -94,15 +107,14 @@ commit() {
         git add ${unstaged[@]}
     fi
 
-    files=("${unstaged[@]}" "${staged[@]}")
-    files=($(printf "%s\n" "${files[@]}" | sort -u))
+    files=(${untracked[@]} ${unstaged[@]} ${staged[@]})
+    files=($(printf "%s\0" "${files[@]}" | sort -z -u))
 
     info "Commiting files:"
     echo $(printf "%s\n" "${files[@]}")
     echo
 
     git commit -m "Automatic update $(date)"
-    echo
 }
 
 upload() {

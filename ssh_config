@@ -2,3 +2,9 @@ Host *
 	UseKeychain yes
 	AddKeysToAgent yes
  	IdentityFile ~/.ssh/id_rsa
+Host ezio
+	User chipp
+	Hostname ezio.burdukov.by
+Host pi
+	User pi
+	Hostname 10.0.1.100
