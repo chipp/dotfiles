@@ -4,18 +4,18 @@
 
 ```shell
 xcode-select --install
-git clone https://github.com/chipp/dotfiles $HOME/dotfiles
+git clone https://github.com/chipp/dotfiles ~/dotfiles
 ```
 
 ## [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp $HOME/dotfiles/.zshrc ~/
-cp -r $HOME/dotfiles/.oh-my-zsh/custom/plugins/* ~/.oh-my-zsh/custom/plugins/
-cp -r $HOME/dotfiles/.dir_colors $HOME/dotfiles/.gemrc $HOME/dotfiles/.gitconfig $HOME/dotfiles/.gitignore_global ~/
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-cp -r $HOME/dotfiles/.p10k.zsh ~/
+cp ~/dotfiles/.zshrc ~/
+cp -r ~/dotfiles/.oh-my-zsh/custom/plugins/* ~/.oh-my-zsh/custom/plugins/
+cp -r ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/dotfiles/.gitconfig ~/dotfiles/.gitignore_global ~/
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+cp -r ~/dotfiles/.p10k.zsh ~/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc
 ```
@@ -24,7 +24,7 @@ source ~/.zshrc
 
 ```shell
 mkdir -m 700 -p ~/.ssh
-cp $HOME/dotfiles/ssh_config ~/.ssh/config
+cp ~/dotfiles/ssh_config ~/.ssh/config
 ```
 
 ## Homebrew – [brew.sh](http://brew.sh)
@@ -51,7 +51,7 @@ cp .gnupg/gpg.conf .gnupg/gpg-agent.conf ~/.gnupg
 killall gpg-agent
 
 gpg --import gpg.private.key
-gpg --import-ownertrust $HOME/dotfiles/.gnupg/ownertrust-gpg.txt
+gpg --import-ownertrust ~/dotfiles/.gnupg/ownertrust-gpg.txt
 ```
 
 ## Xcode
@@ -60,10 +60,11 @@ gpg --import-ownertrust $HOME/dotfiles/.gnupg/ownertrust-gpg.txt
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
 mkdir -p ~/Library/Developer/Xcode/UserData/KeyBindings
 
-cp $HOME/dotfiles/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-cp $HOME/dotfiles/Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/
+cp ~/dotfiles/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+cp ~/dotfiles/Library/Developer/Xcode/UserData/KeyBindings/My.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/
 
 defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "One Dark.xccolortheme"
+defaults write com.apple.dt.Xcode IDEKeyBindingCurrentPreferenceSet -string "My.idekeybindings"
 defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -int 1
 ```
 
@@ -73,8 +74,8 @@ defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -int 1
 mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/User/
 mkdir -p ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 
-cp -r $HOME/dotfiles/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
-cp -r $HOME/dotfiles/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
+cp -r ~/dotfiles/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
+cp -r ~/dotfiles/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 ```
 
 # additional links
