@@ -47,7 +47,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 ```shell
 mkdir -m 700 -p ~/.gnupg
 
-cp .gnupg/gpg.conf .gnupg/gpg-agent.conf ~/.gnupg
+cp ~/dotfiles/.gnupg/gpg.conf ~/dotfiles/.gnupg/gpg-agent.conf ~/.gnupg
 killall gpg-agent
 
 gpg --import gpg.private.key
