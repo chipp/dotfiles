@@ -19,19 +19,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A351004F-F322-49D9-9B24-BF8E72EE352C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CAF7D1E6-3211-4AB2-9397-367071B1EE46</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CAF7D1E6-3211-4AB2-9397-367071B1EE46</key>
 		<array>
 			<dict>
@@ -108,37 +95,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>11</integer>
-				<key>hotmod</key>
-				<integer>1572864</integer>
-				<key>hotstring</key>
-				<string>B</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>A351004F-F322-49D9-9B24-BF8E72EE352C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -196,13 +152,6 @@
 		<dict>
 			<key>xpos</key>
 			<integer>640</integer>
-			<key>ypos</key>
-			<integer>350</integer>
-		</dict>
-		<key>A351004F-F322-49D9-9B24-BF8E72EE352C</key>
-		<dict>
-			<key>xpos</key>
-			<integer>105</integer>
 			<key>ypos</key>
 			<integer>350</integer>
 		</dict>

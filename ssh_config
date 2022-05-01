@@ -5,6 +5,12 @@ Host *
 Host ezio
 	User chipp
 	Hostname ezio.burdukov.by
+Host altair
+	User root
+	Hostname altair.burdukov.by
 Host pi
 	User pi
 	Hostname 10.0.1.100
+Host bis.by
+	User root
+	Hostname 178.172.236.168

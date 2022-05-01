@@ -2,7 +2,7 @@
 // and are overridden in turn by syntax-specific settings.
 {
 	"font_face": "PragmataPro Mono Liga",
-	"font_size": 20,
+	"font_size": 22,
 	"ignored_packages":
 	[
 		"Rust",
@@ -11,4 +11,5 @@
 	],
 	"theme": "Default Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"enable_hexadecimal_encoding": false,
 }

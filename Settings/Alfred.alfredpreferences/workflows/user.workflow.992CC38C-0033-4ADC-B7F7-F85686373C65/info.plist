@@ -29,19 +29,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A8C494DD-3F1A-4934-A160-A1F83347758F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>496748FB-A16F-4FE3-AC91-E1D21F32650A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Vladimir Burdukov</string>
@@ -126,37 +113,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>17</integer>
-				<key>hotmod</key>
-				<integer>1572864</integer>
-				<key>hotstring</key>
-				<string>T</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>A8C494DD-3F1A-4934-A160-A1F83347758F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -181,30 +137,23 @@
 		<key>484C9261-D936-4AE6-A348-D1CF9D030E18</key>
 		<dict>
 			<key>xpos</key>
-			<integer>980</integer>
+			<integer>515</integer>
 			<key>ypos</key>
-			<integer>325</integer>
+			<integer>250</integer>
 		</dict>
 		<key>496748FB-A16F-4FE3-AC91-E1D21F32650A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>160</integer>
 			<key>ypos</key>
-			<integer>235</integer>
-		</dict>
-		<key>A8C494DD-3F1A-4934-A160-A1F83347758F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>330</integer>
-			<key>ypos</key>
-			<integer>235</integer>
+			<integer>160</integer>
 		</dict>
 		<key>B22843BC-C788-4A0B-B984-FC6BFF228BCC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>975</integer>
+			<integer>510</integer>
 			<key>ypos</key>
-			<integer>125</integer>
+			<integer>50</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -215,7 +164,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.0</string>
+	<string>2.0.3</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

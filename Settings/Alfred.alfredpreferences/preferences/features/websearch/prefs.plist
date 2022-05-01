@@ -47,6 +47,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>6FB4CE79-E69C-45F0-B3FF-955F31AC748C</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>lt</string>
+			<key>text</key>
+			<string>Žodynas '{query}'</string>
+			<key>url</key>
+			<string>http://lkz.lt/?zodis={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>71FFD366-5C45-4AF1-9892-6FD8E15C4A29</key>
 		<dict>
 			<key>enabled</key>

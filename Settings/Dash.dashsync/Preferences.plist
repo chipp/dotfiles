@@ -93,6 +93,8 @@
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
+	<key>DHWKWebViewTextSizeMultiplier</key>
+	<real>1.0499999523162842</real>
 	<key>actuallyDarkWebView</key>
 	<true/>
 	<key>docsets</key>
@@ -197,10 +199,17 @@
 		<key>modifiers</key>
 		<integer>0</integer>
 	</dict>
+	<key>searchUsingSelectedTextKey</key>
+	<dict>
+		<key>keyCode</key>
+		<integer>-1</integer>
+		<key>modifiers</key>
+		<integer>0</integer>
+	</dict>
 	<key>shouldRestoreTabs</key>
 	<true/>
 	<key>shouldShowStatusIcon</key>
-	<true/>
+	<false/>
 	<key>shouldStartAtLogin</key>
 	<true/>
 	<key>shouldSyncDocsets</key>
