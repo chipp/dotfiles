@@ -66,6 +66,7 @@ export CC_armv7_unknown_linux_gnueabihf=/Volumes/gcc/x-tools/arm-rpi3-linux-gnue
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export GOPATH=$HOME/d/g
+# eval $(op signin --account tapitapka.1password.com)
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

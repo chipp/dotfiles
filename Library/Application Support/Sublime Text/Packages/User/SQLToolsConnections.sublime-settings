@@ -2,7 +2,7 @@
 {
     "connections": {
         "type"    : "sqlite",
-        "database": "/Users/vladimir_burdukov/d/i/p/LT-RU/LT-RU/words.sqlite",
+        "database": "/Users/vladimir_burdukov/d/rs/e/velocity/data.sqlite3",
     },
     "default": null
 }

@@ -161,8 +161,6 @@
 		<key>CURL_SSL_BACKEND</key>
 		<string>secure-transport</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>2.0.3</string>
 	<key>webaddress</key>
