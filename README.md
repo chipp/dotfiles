@@ -32,7 +32,8 @@ cp ~/dotfiles/ssh_config ~/.ssh/config
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
-brew install git git-lfs hub coreutils gpg mc imagemagick jq rust-analyzer pinentry-mac
+brew tap chipp/mc
+brew install git git-lfs hub coreutils gpg midnight-commander@4.8.25 imagemagick jq rust-analyzer pinentry-mac
 ```
 
 ## [RVM.io](https://rvm.io)
