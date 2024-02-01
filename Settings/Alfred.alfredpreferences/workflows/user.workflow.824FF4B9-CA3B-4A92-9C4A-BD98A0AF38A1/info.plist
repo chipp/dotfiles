@@ -78,6 +78,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -103,7 +105,7 @@ single="^[A-Fa-f0-9]{6}$"
 
 generate_color () {
 	local path=$(mktemp)
-	/usr/local/bin/convert -size 100x100 xc:white -fill "#$1" -stroke white -draw "rectangle 0,0,99,99" "png:$path"
+	convert -size 100x100 xc:white -fill "#$1" -stroke white -draw "rectangle 0,0,99,99" "png:$path"
 	echo $path
 }
 
@@ -149,19 +151,21 @@ fi</string>
 			<key>uid</key>
 			<string>4EC42E76-3327-4DE6-BAE1-6E4C86022C79</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>http://www.colorhexa.com/{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -190,6 +194,8 @@ fi</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -210,16 +216,16 @@ fi</string>
 				<string></string>
 				<key>script</key>
 				<string>query="{query}"
-regex="^([1-2]?[0-9]{2})[[:space:]]([1-2]?[0-9]{2})[[:space:]]([1-2]?[0-9]{2})$"
+regex="^([1-2]?[0-9]{1,2})[[:space:]]([1-2]?[0-9]{1,2})[[:space:]]([1-2]?[0-9]{1,2})$"
 
 if [[ $query =~ $regex ]] ; then
 	preview=$(mktemp)
 	r="${BASH_REMATCH[1]}"
 	g="${BASH_REMATCH[2]}"
 	b="${BASH_REMATCH[3]}"
-	/usr/local/bin/convert -size 100x100 xc:white -fill "rgb($r,$g,$b)" -stroke white -draw "rectangle 0,0,99,99" "png:$preview"
+	convert -size 100x100 xc:white -fill "rgb($r,$g,$b)" -stroke white -draw "rectangle 0,0,99,99" "png:$preview"
 	
-	hex=$(printf %x%x%x $r $g $b)
+	hex=$(printf %.2x%.2x%.2x $r $g $b)
 
 	cat &lt;&lt; EOB
 {
@@ -260,7 +266,7 @@ fi</string>
 			<key>uid</key>
 			<string>2231C1F7-05A7-42C8-B315-11AA7F00FA71</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -269,6 +275,8 @@ fi</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -297,7 +305,7 @@ if [[ $query =~ $compare ]] ; then
 	right="${BASH_REMATCH[2]}"
 
 	path=$(mktemp)
-	/usr/local/bin/convert -size 100x100 xc:none -stroke white -fill none -draw "rectangle 0,0,99,99" -fill "#$left" -stroke none -draw "rectangle 1,1,49,98" -fill "#$right" -stroke none -draw "rectangle 50,1,98,98" "png:$path"
+	convert -size 100x100 xc:none -stroke white -fill none -draw "rectangle 0,0,99,99" -fill "#$left" -stroke none -draw "rectangle 1,1,49,98" -fill "#$right" -stroke none -draw "rectangle 50,1,98,98" "png:$path"
 
 	cat &lt;&lt; EOB
 {
@@ -335,7 +343,7 @@ fi</string>
 			<key>uid</key>
 			<string>488E9A9E-8AC0-4A63-A5F1-FCC9484BB498</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -360,46 +368,48 @@ fi</string>
 		<key>048727CE-1B1C-4AE2-8F6C-D8A30A657B56</key>
 		<dict>
 			<key>xpos</key>
-			<integer>410</integer>
+			<real>410</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 		<key>11D5721D-E45C-4D45-82C8-2CC370002271</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<real>650</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>120</real>
 		</dict>
 		<key>2231C1F7-05A7-42C8-B315-11AA7F00FA71</key>
 		<dict>
 			<key>xpos</key>
-			<integer>100</integer>
+			<real>100</real>
 			<key>ypos</key>
-			<integer>200</integer>
+			<real>200</real>
 		</dict>
 		<key>2F900ED7-0028-4678-8C5C-3D5B4CD9A609</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<real>650</real>
 			<key>ypos</key>
-			<integer>410</integer>
+			<real>410</real>
 		</dict>
 		<key>488E9A9E-8AC0-4A63-A5F1-FCC9484BB498</key>
 		<dict>
 			<key>xpos</key>
-			<integer>100</integer>
+			<real>100</real>
 			<key>ypos</key>
-			<integer>410</integer>
+			<real>410</real>
 		</dict>
 		<key>4EC42E76-3327-4DE6-BAE1-6E4C86022C79</key>
 		<dict>
 			<key>xpos</key>
-			<integer>100</integer>
+			<real>100</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>webaddress</key>
 	<string></string>
 </dict>

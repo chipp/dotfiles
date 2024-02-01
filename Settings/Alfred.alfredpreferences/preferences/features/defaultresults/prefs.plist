@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>fallbacks</key>
+	<array>
+		<string>features.websearch.google.fallback</string>
+		<string>features.websearch.amazon.fallback</string>
+		<string>features.websearch.wiki.fallback</string>
+		<string>user.workflow.992CC38C-0033-4ADC-B7F7-F85686373C65.DD7F3476-8FBA-44D4-BCDB-7BC87B0E2CAE</string>
+	</array>
+	<key>fallbacksMode</key>
+	<integer>1</integer>
 	<key>showDocuments</key>
 	<true/>
 </dict>

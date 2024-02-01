@@ -45,12 +45,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string></string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -83,7 +85,7 @@
 				<key>queuedelaymode</key>
 				<integer>1</integer>
 				<key>queuemode</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Searching</string>
 				<key>script</key>
@@ -137,32 +139,38 @@
 		<key>484C9261-D936-4AE6-A348-D1CF9D030E18</key>
 		<dict>
 			<key>xpos</key>
-			<integer>515</integer>
+			<real>515</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>250</real>
 		</dict>
 		<key>496748FB-A16F-4FE3-AC91-E1D21F32650A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>160</integer>
+			<real>160</real>
 			<key>ypos</key>
-			<integer>160</integer>
+			<real>160</real>
 		</dict>
 		<key>B22843BC-C788-4A0B-B984-FC6BFF228BCC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>510</integer>
+			<real>510</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
+		<key>API_VERSION</key>
+		<string>3.25.0</string>
 		<key>CURL_SSL_BACKEND</key>
 		<string>secure-transport</string>
+		<key>DEBUG</key>
+		<string>1</string>
 	</dict>
 	<key>version</key>
-	<string>2.0.3</string>
+	<string>2.0.8</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

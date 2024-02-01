@@ -106,59 +106,80 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>http://kapeli.com/feeds/Android.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2023-06-13T07:39:50Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Apple_API_Reference.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-03-10T19:42:53Z</date>
+				<date>2022-06-27T11:19:36Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Docker.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-03-10T19:42:32Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Go.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2021-03-10T19:42:37Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/HTML.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2021-03-10T19:42:32Z</date>
+				<date>2022-06-15T15:37:17Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-03-28T13:00:40Z</date>
+				<date>2022-06-15T15:39:04Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-03-25T20:47:54Z</date>
+				<date>2022-06-15T15:37:28Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/NodeJS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-03-10T19:42:28Z</date>
+				<date>2022-06-15T15:37:39Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Python_3.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-03-10T19:42:41Z</date>
+				<date>2022-06-15T15:37:44Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
+			<key>http://kapeli.com/feeds/Ruby_3.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-03-10T19:42:51Z</date>
+				<date>2022-12-22T12:30:55Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Ruby_on_Rails_7.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2023-06-14T07:40:39Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Rust.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2021-03-10T19:42:39Z</date>
+				<date>2022-06-15T15:38:46Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>http://kapeli.com/feeds/Go.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2023-06-13T07:38:54Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/HTML.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2023-06-13T07:38:51Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Java_SE18.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2023-06-13T07:38:46Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2022-10-04T15:23:27Z</date>
+			</dict>
+		</dict>
 	</dict>
 	<key>isPinned</key>
 	<false/>
@@ -314,9 +335,21 @@
 	<key>versionedFeeds</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
+			<dict/>
+		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
+			<dict>
+				<key>2.6.7</key>
+				<dict>
+					<key>date</key>
+					<date>2022-12-22T12:30:28Z</date>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 </dict>
 </plist>

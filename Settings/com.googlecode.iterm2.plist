@@ -724,6 +724,17 @@ tmux.Detach</string>
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>0xf700-0x320000-0x7e</key>
+		<dict>
+			<key>Action</key>
+			<integer>9</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>0</integer>
+		</dict>
 		<key>0xf701-0x300000</key>
 		<dict>
 			<key>Action</key>
@@ -731,12 +742,16 @@ tmux.Detach</string>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf702-0x280000</key>
+		<key>0xf701-0x320000-0x7d</key>
 		<dict>
 			<key>Action</key>
-			<integer>10</integer>
+			<integer>8</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
-			<string>B</string>
+			<string></string>
+			<key>Version</key>
+			<integer>0</integer>
 		</dict>
 		<key>0xf702-0x300000</key>
 		<dict>
@@ -751,13 +766,6 @@ tmux.Detach</string>
 			<integer>33</integer>
 			<key>Text</key>
 			<string></string>
-		</dict>
-		<key>0xf703-0x280000</key>
-		<dict>
-			<key>Action</key>
-			<integer>10</integer>
-			<key>Text</key>
-			<string>f</string>
 		</dict>
 		<key>0xf703-0x300000</key>
 		<dict>
@@ -787,24 +795,10 @@ tmux.Detach</string>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf72c-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>9</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 		<key>0xf72c-0x20000</key>
 		<dict>
 			<key>Action</key>
 			<integer>9</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0xf72d-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>8</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>

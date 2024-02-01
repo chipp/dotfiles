@@ -7,17 +7,22 @@ xcode-select --install
 git clone https://github.com/chipp/dotfiles ~/dotfiles
 ```
 
-## [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+## Homebrew – [brew.sh](http://brew.sh)
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp ~/dotfiles/.zshrc ~/
-cp -r ~/dotfiles/.oh-my-zsh/custom/plugins/* ~/.oh-my-zsh/custom/plugins/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew doctor
+brew install 1password-cli coreutils docker docker-buildx docker-completion docker-compose docker-credential-helper fish fsnotes git git-lfs gpg hub imagemagick jq midnight-commander mosh mosquitto node pinentry-mac podman podman-desktop provisionql python qemu xcinfo
+```
+
+## [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
+
+```shell
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 cp -r ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/dotfiles/.gitconfig ~/dotfiles/.gitignore_global ~/
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
-cp -r ~/dotfiles/.p10k.zsh ~/
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-source ~/.zshrc
+mkdir -p ~/.config
+cp -r ~/dotfiles/omf ~/.config/
+fish
 ```
 
 ## ssh config
@@ -25,15 +30,6 @@ source ~/.zshrc
 ```shell
 mkdir -m 700 -p ~/.ssh
 cp ~/dotfiles/ssh_config ~/.ssh/config
-```
-
-## Homebrew – [brew.sh](http://brew.sh)
-
-```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew doctor
-brew tap chipp/mc
-brew install git git-lfs hub coreutils gpg midnight-commander@4.8.25 imagemagick jq rust-analyzer pinentry-mac
 ```
 
 ## [RVM.io](https://rvm.io)

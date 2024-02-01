@@ -61,9 +61,10 @@ copy() {
     cp $HOME/.gemrc ./
     cp $HOME/.gitconfig ./
     cp $HOME/.gitignore_global ./
-    cp $HOME/.p10k.zsh ./
-    cp $HOME/.zshrc ./
     cp $HOME/.ssh/config ./ssh_config
+
+    info "Copying oh-my-fish configuration"
+    cp -r $HOME/.config/omf ./
 
     info "Copying Sublime Text settings"
     cp -r $HOME/Library/Application\ Support/Sublime\ Text/Packages/User/* \
