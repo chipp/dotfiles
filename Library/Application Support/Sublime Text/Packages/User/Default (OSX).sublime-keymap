@@ -1,7 +1,8 @@
 [
 	{ "keys": ["alt+up"], "command": "swap_line_up" },
 	{ "keys": ["alt+down"], "command": "swap_line_down" },
-    { "keys": ["super+alt+down"], "command": "duplicate_line" },
+    { "keys": ["super+option+down"], "command": "duplicate_line" },
+    { "keys": ["super+shift+j"], "command": "reveal_in_side_bar"},
 	{ "keys": ["f2"], "command": "lsp_symbol_rename" },
   	{ "keys": ["super+ctrl+j"], "command": "lsp_symbol_definition" },
   	{ "keys": ["super+option+r"], "command": "lsp_document_symbols" },
@@ -21,4 +22,13 @@
     },
     { "keys": ["ctrl+super+left"], "command": "jump_back" },
     { "keys": ["ctrl+super+right"], "command": "jump_forward" },
+    {
+    "keys": ["ctrl+alt+m"],
+    "command": "copilot_accept_completion",
+    "context": [
+        {
+            "key": "setting.copilot.completion.is_visible"
+        }
+    ]
+},
 ]

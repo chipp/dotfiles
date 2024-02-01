@@ -1,0 +1,9 @@
+package brew
+package cd
+package rustup
+package rvm
+package xcode
+package z
+theme agnoster
+theme bobthefish
+theme default

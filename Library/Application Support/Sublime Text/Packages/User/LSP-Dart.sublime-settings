@@ -1,0 +1,6 @@
+// Settings in here override those in "LSP-Dart/LSP-Dart.sublime-settings"
+{
+    "env": {
+        "FLUTTER_ROOT": "/Users/vladimir_burdukov/fvm/versions/3.13.9"
+    }
+}

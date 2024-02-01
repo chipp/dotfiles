@@ -1,8 +1,14 @@
 // List all your connections to DBs here
 {
     "connections": {
-        "type"    : "sqlite",
-        "database": "/Users/vladimir_burdukov/d/rs/e/velocity/data.sqlite3",
+        "data.sqlite3": {
+            "type"    : "sqlite",
+            "database": "/Users/vladimir_burdukov/d/rs/e/velocity/data.sqlite3",
+        },
+        "template-v7.db": {
+            "type"    : "sqlite",
+            "database": "/Users/vladimir_burdukov/d/rs/p/lisa/template-v7.db",
+        }
     },
     "default": null
 }

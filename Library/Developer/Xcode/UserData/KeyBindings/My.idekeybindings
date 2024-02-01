@@ -110,6 +110,26 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.1A0FF8D3-A88D-438B-965D-F12FBE92D084</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Enum Matcher</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
 				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.1B4D9E83-2348-4272-95FD-FB0C6E0126E4</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
@@ -123,6 +143,46 @@
 				<string>Sourcery Pro</string>
 				<key>Title</key>
 				<string>New Template 1</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.2C3B70C8-877D-44F4-B4F1-18CB22692FAD</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoCasePath</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.5E45F84A-A42C-472D-8C55-A32912B2FBB0</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Memberwise initializer</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -150,6 +210,46 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.7EAFDCB9-8EE5-4BAE-82B2-E9A6764A2044</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Protocol Mock</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.8C74D11E-A6D7-44C9-93CF-D192D72E2A46</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>SwiftUI Form</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
 				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.31C8948E-9576-4499-8868-803ECA678159</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
@@ -163,6 +263,86 @@
 				<string>Sourcery Pro</string>
 				<key>Title</key>
 				<string>Lenses</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.53E3E132-C2C2-4D04-BD69-4E00481F7C99</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoCaseName</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.91D55B91-52DD-4A17-AE01-379008E6CFD3</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoInterfaces TCA</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.184EC0DE-B575-46BA-A90E-92FD625CA3D6</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Enum Codable</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.565BD32E-24CC-44EE-B31E-25E46E270519</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoInterfaces</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -190,6 +370,26 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.732DAC13-500F-4017-8C76-765DBEF689AE</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>SwiftUI Snapshot</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
 				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.872E228A-5856-4584-9D61-79829DCB3930</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
@@ -203,6 +403,26 @@
 				<string>Sourcery Pro</string>
 				<key>Title</key>
 				<string>Enum Matcher</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.8913F1D4-CEBF-4427-8C5D-0B6866813DAF</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Lenses</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -230,6 +450,26 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.24727FE2-F925-416C-8801-B32414A74EEA</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Test (Quick)</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
 				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.1427664A-D5D6-439B-9550-619F8F5F8346</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
@@ -250,6 +490,26 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.75604364-DD0F-451D-9E53-4881E4D1172C</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Composable Feature</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
 				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.A371485D-5613-4B80-AC04-5F127374F356</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
@@ -263,6 +523,26 @@
 				<string>Sourcery Pro</string>
 				<key>Title</key>
 				<string>New Template 1</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.B5380BF6-9401-47B0-A2E1-F20B311680B2</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Prism</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -343,6 +623,26 @@
 				<string>Sourcery Pro</string>
 				<key>Title</key>
 				<string>AutoCaseName</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.E322F29E-C92B-4AD3-A3F6-AD7297F9A148</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoProperties</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -548,7 +848,7 @@
 				<key>Group</key>
 				<string>Editor Menu for Playground</string>
 				<key>GroupID</key>
-				<string>Xcode.IDEPegasusPlaygroundEditor.MenuDefinition.Editor</string>
+				<string>Xcode.IDEPlaygroundEditor.MenuDefinition.Editor</string>
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
@@ -573,30 +873,6 @@
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
 				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Keyboard Shortcut</key>
-				<string>~</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Structure</string>
-				<key>Title</key>
-				<string>Move Line Down</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>moveCurrentLineDown:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandGroupID</key>
-				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.MoveLineDown</string>
-				<key>CommandID</key>
-				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.MoveLineDown</string>
-				<key>Group</key>
-				<string>Editor Menu for Stickers</string>
-				<key>GroupID</key>
-				<string>Xcode.DeltaComparisonEditor.MenuDefinition.Editor</string>
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
@@ -644,7 +920,7 @@
 				<key>Group</key>
 				<string>Editor Menu for Playground</string>
 				<key>GroupID</key>
-				<string>Xcode.IDEPegasusPlaygroundEditor.MenuDefinition.Editor</string>
+				<string>Xcode.IDEPlaygroundEditor.MenuDefinition.Editor</string>
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
@@ -669,30 +945,6 @@
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
 				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Keyboard Shortcut</key>
-				<string>~</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Structure</string>
-				<key>Title</key>
-				<string>Move Line Up</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>moveCurrentLineUp:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandGroupID</key>
-				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.MoveLineUp</string>
-				<key>CommandID</key>
-				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.MoveLineUp</string>
-				<key>Group</key>
-				<string>Editor Menu for Stickers</string>
-				<key>GroupID</key>
-				<string>Xcode.DeltaComparisonEditor.MenuDefinition.Editor</string>
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>

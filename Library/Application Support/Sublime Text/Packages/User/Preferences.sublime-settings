@@ -12,4 +12,5 @@
 	"theme": "Default Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"enable_hexadecimal_encoding": false,
+	"index_files": true,
 }

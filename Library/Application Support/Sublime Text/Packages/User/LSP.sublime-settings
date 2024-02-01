@@ -7,7 +7,7 @@
 		"rust-analyzer": {
 			"enabled": true,
 			"command": [
-				"/usr/local/bin/rust-analyzer"	
+				"/Users/vladimir_burdukov/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer"
 			],
 			"initializationOptions": {
 				"cargo": {
@@ -19,13 +19,33 @@
 				},
 			},
 		},
-		"ruby":
+		"ruby": {
+			"env":{
+				"GEM_HOME": "/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2",
+				"PATH": "/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2/bin:/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2@global/bin:/Users/vladimir_burdukov/.rvm/rubies/ruby-3.2.2/bin:/Users/vladimir_burdukov/.rvm/bin:/opt/homebrew/bin:/Users/vladimir_burdukov/.bin:/Users/vladimir_burdukov/.cargo/bin:/usr/local/bin"
+			},
+			"enabled": true,
+			"command": ["solargraph", "stdio"],
+			"selector": "source.ruby | text.html.ruby",
+			"initializationOptions": {
+				"diagnostics": true,
+			},
+		},
+		"pyls": {
+			"enabled": true,
+		},
+		"sorbet":
 		{
 			"enabled": false,
-		},
-		"pyls":
-		{
-			"enabled": true,
+			"command": [
+				"/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2/bin/srb",
+				"tc",
+				"--typed",
+				"true",
+				"--enable-all-experimental-lsp-features",
+				"--lsp",
+				"--disable-watchman",
+			],
 		},
 	},
 }
