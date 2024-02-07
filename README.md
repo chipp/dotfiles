@@ -22,7 +22,6 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 cp -r ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/dotfiles/.gitconfig ~/dotfiles/.gitignore_global ~/
 mkdir -p ~/.config
 cp -r ~/dotfiles/omf ~/.config/
-fish
 ```
 
 ## ssh config
