@@ -1,11 +1,10 @@
-rvm default
+# rvm default
 
 alias ls='gls --color=auto'
-alias git="gitext"
+# alias git="gitext"
 alias s='subl'
 alias killsim="launchctl remove com.apple.CoreSimulator.CoreSimulatorService"
 alias sm="smerge ."
-alias git="gitext"
 
 if test -e ~/.dir_colors
     eval (gdircolors -c ~/.dir_colors)
@@ -29,5 +28,5 @@ set -xg LANG en_US.UTF-8
 fish_add_path -a "$HOME/.cargo/bin"
 fish_add_path -a "$HOME/.bin"
 
-set -xg RUST_SRC_PATH "$(rustc --print sysroot)/lib/rustlib/src/rust/src"
-set -xg DOCKER_HOST 'unix:///Users/vladimir_burdukov/.local/share/containers/podman/machine/qemu/podman.sock'
+# set -xg RUST_SRC_PATH "$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+# set -xg DOCKER_HOST 'unix:///Users/vladimir_burdukov/.local/share/containers/podman/machine/qemu/podman.sock'
