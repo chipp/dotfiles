@@ -167,7 +167,7 @@
 		<key>CURL_SSL_BACKEND</key>
 		<string>secure-transport</string>
 		<key>DEBUG</key>
-		<string>1</string>
+		<string>0</string>
 	</dict>
 	<key>version</key>
 	<string>2.0.8</string>
