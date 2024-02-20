@@ -2,9 +2,11 @@ Host *
 	UseKeychain yes
 	AddKeysToAgent yes
 	IdentityFile ~/.ssh/id_rsa
+
 Host ezio
 	User chipp
-	Hostname ezio.burdukov.by
+	Hostname ezio.chipp.dev
+
 Host bis.by
 	User root
 	Hostname 178.172.236.168

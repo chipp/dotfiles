@@ -21,8 +21,8 @@
 		},
 		"ruby": {
 			"env":{
-				"GEM_HOME": "/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2",
-				"PATH": "/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2/bin:/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2@global/bin:/Users/vladimir_burdukov/.rvm/rubies/ruby-3.2.2/bin:/Users/vladimir_burdukov/.rvm/bin:/opt/homebrew/bin:/Users/vladimir_burdukov/.bin:/Users/vladimir_burdukov/.cargo/bin:/usr/local/bin"
+				"GEM_HOME": "/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.3",
+				"PATH": "/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.3/bin:/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.3@global/bin:/Users/vladimir_burdukov/.rvm/rubies/ruby-3.2.3/bin:/Users/vladimir_burdukov/.rvm/bin:/opt/homebrew/bin:/Users/vladimir_burdukov/.bin:/Users/vladimir_burdukov/.cargo/bin:/usr/local/bin"
 			},
 			"enabled": true,
 			"command": ["solargraph", "stdio"],
@@ -38,7 +38,7 @@
 		{
 			"enabled": false,
 			"command": [
-				"/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2/bin/srb",
+				"/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.3/bin/srb",
 				"tc",
 				"--typed",
 				"true",
