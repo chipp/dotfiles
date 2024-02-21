@@ -1,7 +1,7 @@
 rvm default
 
 alias ls='gls --color=auto'
-#alias git="gitext"
+alias git="gitext"
 alias s='subl'
 alias killsim="launchctl remove com.apple.CoreSimulator.CoreSimulatorService"
 alias sm="smerge ."
