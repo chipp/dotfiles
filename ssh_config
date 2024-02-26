@@ -21,7 +21,7 @@ Host pi4
 
 Host pi3-remote
 	User chipp
-	ProxyCommand /opt/homebrew/bin/cloudflared access ssh --hostname pi3.chipp.dev --log-level debug --logfile /Users/vladimir_burdukov/ssh.log
+	ProxyCommand /opt/homebrew/bin/cloudflared access ssh --hostname pi3.chipp.dev
 
 Host pi4-remote
 	User chipp
