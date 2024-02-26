@@ -13,15 +13,15 @@ Host bis.by
 
 Host pi3
 	User chipp
-	Hostname 192.168.1.100
+	Hostname 10.0.1.100
 
 Host pi4
 	User chipp
-	Hostname 192.168.1.110
+	Hostname 10.0.1.110
 
 Host pi3-remote
 	User chipp
-	ProxyCommand /opt/homebrew/bin/cloudflared access ssh --hostname pi3.chipp.dev
+	ProxyCommand /opt/homebrew/bin/cloudflared access ssh --hostname pi3.chipp.dev --log-level debug --logfile /Users/vladimir_burdukov/ssh.log
 
 Host pi4-remote
 	User chipp

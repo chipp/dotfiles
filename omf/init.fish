@@ -19,6 +19,8 @@ else
 end
 
 set -xg theme_color_scheme terminal
+set -xg theme_nerd_fonts yes
+set -xg theme_date_format "+%F %r"
 
 set -xg GPG_TTY
 

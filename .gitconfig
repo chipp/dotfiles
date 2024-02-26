@@ -1,4 +1,5 @@
 [alias]
+	aa = auth
 	co = checkout
 	sw = switch
 	re = restore
