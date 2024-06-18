@@ -59,26 +59,10 @@ copy() {
     info "Copying home dotfiles"
     cp $HOME/.dir_colors ./
     cp $HOME/.gemrc ./
-    cp $HOME/.gitconfig ./
     cp $HOME/.gitignore_global ./
-    cp $HOME/.ssh/config ./ssh_config
 
     info "Copying oh-my-fish configuration"
     cp -r $HOME/.config/omf ./
-
-    info "Copying Sublime Text settings"
-    cp -r $HOME/Library/Application\ Support/Sublime\ Text/Packages/User/* \
-        Library/Application\ Support/Sublime\ Text/Packages/User/
-
-    info "Copying Sublime Merge settings"
-    cp -r $HOME/Library/Application\ Support/Sublime\ Merge/Packages/User/* \
-        Library/Application\ Support/Sublime\ Merge/Packages/User/
-
-    info "Copying Xcode settings"
-    cp $HOME/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme \
-        ./Library/Developer/Xcode/UserData/FontAndColorThemes/
-    cp $HOME/Library/Developer/Xcode/UserData/KeyBindings/My.idekeybindings \
-        ./Library/Developer/Xcode/UserData/KeyBindings/
 }
 
 commit() {

@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : ": .+(https:\/\/jenkins.conn-np.appdev.io\/job\/Conn-App-iOS-NP\/job\/Conn-App-iOS-\\w+\/\\d+).+",
-    "uid" : "1D7946BC-16A5-4F59-88F1-AF6CB70F0995",
-    "name" : "build regex",
-    "keyword" : "brgx"
-  }
-}

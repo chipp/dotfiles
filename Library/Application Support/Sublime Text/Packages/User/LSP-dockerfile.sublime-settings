@@ -1,7 +1,0 @@
-// Settings in here override those in "LSP-dockerfile/LSP-dockerfile.sublime-settings"
-
-{
-    "env": {
-        "PATH": "/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2/bin:/Users/vladimir_burdukov/.rvm/gems/ruby-3.2.2@global/bin:/Users/vladimir_burdukov/.rvm/rubies/ruby-3.2.2/bin:/Users/vladimir_burdukov/.rvm/bin:/opt/homebrew/bin:/Users/vladimir_burdukov/.bin:/Users/vladimir_burdukov/.cargo/bin:/usr/local/bin"
-    }
-}

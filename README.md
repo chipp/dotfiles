@@ -5,6 +5,7 @@
 ```shell
 xcode-select --install
 git clone https://github.com/chipp/dotfiles ~/dotfiles
+git clone https://github.com/chipp/configs ~/configs
 ```
 
 ## Homebrew – [brew.sh](http://brew.sh)
@@ -19,7 +20,7 @@ brew install 1password-cli coreutils docker docker-buildx docker-completion dock
 
 ```shell
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-cp -r ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/dotfiles/.gitconfig ~/dotfiles/.gitignore_global ~/
+cp -r ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/configs/.gitconfig ~/dotfiles/.gitignore_global ~/
 mkdir -p ~/.config
 cp -r ~/dotfiles/omf ~/.config/
 ```
@@ -28,7 +29,7 @@ cp -r ~/dotfiles/omf ~/.config/
 
 ```shell
 mkdir -m 700 -p ~/.ssh
-cp ~/dotfiles/ssh_config ~/.ssh/config
+cp ~/configs/ssh_config ~/.ssh/config
 ```
 
 ## [RVM.io](https://rvm.io)
@@ -56,8 +57,8 @@ gpg --import-ownertrust ~/dotfiles/.gnupg/ownertrust-gpg.txt
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
 mkdir -p ~/Library/Developer/Xcode/UserData/KeyBindings
 
-cp ~/dotfiles/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-cp ~/dotfiles/Library/Developer/Xcode/UserData/KeyBindings/My.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/
+cp ~/configs/Library/Developer/Xcode/UserData/FontAndColorThemes/One\ Dark.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+cp ~/configs/Library/Developer/Xcode/UserData/KeyBindings/My.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/
 
 defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "One Dark.xccolortheme"
 defaults write com.apple.dt.Xcode IDEKeyBindingCurrentPreferenceSet -string "My.idekeybindings"
@@ -67,11 +68,11 @@ defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -int 1
 ## Sublime Text and Sublime Merge
 
 ```shell
-mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/User/
-mkdir -p ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
+mkdir -p ~/configs/Application\ Support/Sublime\ Text/Packages/User/
+mkdir -p ~/configs/Application\ Support/Sublime\ Merge/Packages/User/
 
-cp -r ~/dotfiles/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
-cp -r ~/dotfiles/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
+cp -r ~/configs/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
+cp -r ~/configs/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 ```
 
 # additional links

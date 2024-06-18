@@ -1,6 +1,0 @@
-// RustFmt Settings - User
-{
-	"executable": ["$HOME/.cargo/bin/rustfmt", "--edition", "2018"],
-	"error_messages": false,
-	"format_on_save": false
-}
