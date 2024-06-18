@@ -2,6 +2,7 @@ package brew
 package cd
 package rustup
 package rvm
+package sublime
 package xcode
 package z
 theme agnoster
