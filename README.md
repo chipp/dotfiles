@@ -68,8 +68,8 @@ defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -int 1
 ## Sublime Text and Sublime Merge
 
 ```shell
-mkdir -p ~/configs/Application\ Support/Sublime\ Text/Packages/User/
-mkdir -p ~/configs/Application\ Support/Sublime\ Merge/Packages/User/
+mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/User/
+mkdir -p ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 
 cp -r ~/configs/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
 cp -r ~/configs/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
