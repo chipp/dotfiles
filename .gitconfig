@@ -1,0 +1,46 @@
+[alias]
+    aa = auth
+    co = checkout
+    sw = switch
+    re = restore
+    c = commit
+    cc = commit -C HEAD --amend
+    s = status
+    b = branch
+    h = log --pretty=format:\"%C(red)%h %C(cyan)%ad %C(reset)| %s%C(bold yellow)%d %C(bold blue)[%an]\" --graph --date=format:'%Y-%m-%d %I:%M %p'
+    r = rebase
+    ra = rebase --abort
+    rc = rebase --continue
+    d = diff --word-diff
+    ds = diff --staged --word-diff
+    dt = difftool
+    dts = difftool --staged
+    mt = mergetool
+    pf = push --force-with-lease
+    pu = push -u
+    pp = pull --prune
+    cp = cherry-pick
+[user]
+    name = Vladimir Burdukov
+    email = chippcheg@gmail.com
+    signingkey = 2503E0D3082F66BB40B3E8B123B029943F152215
+
+[commit]
+    gpgsign = true
+
+[push]
+    default = current
+[pull]
+    rebase = true
+
+[status]
+    showStash = true
+[stash]
+    showPatch = true
+
+[core]
+    excludesfile = ~/.gitignore_global
+[gpg]
+    program = /usr/bin/gpg
+[init]
+    defaultBranch = main
