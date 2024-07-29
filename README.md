@@ -13,7 +13,7 @@ git clone https://github.com/chipp/configs ~/configs
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
-brew install 1password-cli coreutils docker docker-buildx docker-completion docker-compose docker-credential-helper fish fsnotes git git-lfs gpg hub imagemagick jq midnight-commander mosh mosquitto node pinentry-mac podman podman-desktop provisionql python qemu xcinfo
+brew install 1password-cli colima coreutils docker docker-buildx docker-completion docker-compose docker-credential-helper fish fsnotes git git-lfs gpg hub imagemagick jq midnight-commander mosh mosquitto node pinentry-mac provisionql python xcinfo
 ```
 
 ## [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
@@ -36,7 +36,8 @@ cp ~/configs/ssh_config ~/.ssh/config
 
 ```shell
 gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-curl -sSL https://get.rvm.io | bash
+curl -sSL https://get.rvm.io | bash -- --ignore-dotfiles
+rvm install 3.3.4 --with-openssl-dir=$(brew --prefix openssl) --with-readline-dir=$(brew --prefix readline) --with-libyaml-dir=$(brew --prefix libyaml)
 ```
 
 ## GPG
