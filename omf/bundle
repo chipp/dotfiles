@@ -1,5 +1,6 @@
 package brew
 package cd
+package https://github.com/aohorodnyk/fish-autovenv
 package rustup
 package rvm
 package sublime
