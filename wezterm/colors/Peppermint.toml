@@ -1,0 +1,30 @@
+# Peppermint
+[colors]
+foreground = "#C8C8C8"
+background = "#000000"
+cursor_bg = "#bbbbbb"
+cursor_border = "#bbbbbb"
+cursor_fg = "#ffffff"
+selection_bg = "#E6E6E6"
+selection_fg = "#000000"
+
+ansi = [
+    "#454545", # black
+    "#eb647e", # red
+    "#9bd69b", # green
+    "#d8b75b", # yellow
+    "#59afd7", # blue
+    "#e183e1", # magenta
+    "#79b7bc", # cyan
+    "#c1c1c1", # white
+]
+brights = [
+    "#666666", # bright black
+    "#e99cac", # bright red
+    "#b2d3b2", # bright green
+    "#e6e69d", # bright yellow
+    "#84c8e6", # bright blue
+    "#eaa1ea", # bright magenta
+    "#a8e1e1", # bright cyan
+    "#e5e5e5", # bright white
+]

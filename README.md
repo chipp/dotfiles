@@ -26,9 +26,17 @@ brew install 1password-cli colima coreutils docker docker-buildx docker-completi
 
 ```shell
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-cp -r ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/configs/.gitconfig ~/dotfiles/.gitignore_global ~/
+rsync --progress ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/configs/.gitconfig ~/dotfiles/.gitignore_global ~/
+
 mkdir -p ~/.config
-cp -r ~/dotfiles/omf ~/.config/
+rsync --progress -r ~/dotfiles/omf ~/.config/
+```
+
+## [wezterm](https://github.com/wezterm/wezterm)
+
+```shell
+mkdir -p ~/.config
+rsync --progress -r ~/dotfiles/wezterm ~/.config/
 ```
 
 ## ssh config

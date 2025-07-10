@@ -61,11 +61,14 @@ copy() {
     cp $HOME/.gemrc ./
     cp $HOME/.gitignore_global ./
 
+
     info "Copying oh-my-fish configuration"
-    cp -r $HOME/.config/omf ./
+    rsync -hPr $HOME/.config/omf ./
 
     info "Copying fish configuration"
-    cp -r $HOME/.config/fish/themes/ ./fish/themes/
+    rsync -hPr $HOME/.config/fish/themes/ ./fish/themes/
+
+    rsync -hPr --exclude workspaces.json $HOME/.config/wezterm ./
 }
 
 commit() {
