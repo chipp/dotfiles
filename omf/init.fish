@@ -29,10 +29,11 @@ set -xg GPG_TTY
 set -xg LC_ALL en_US.UTF-8
 set -xg LANG en_US.UTF-8
 
+fish_add_path -a "/opt/homebrew/sbin"
 fish_add_path -a "$HOME/.cargo/bin"
 fish_add_path -a "$HOME/.local/bin"
 fish_add_path -a "$HOME/.usd/bin"
-fish_add_path -a "/opt/homebrew/sbin"
+fish_add_path -a "$HOME/.mint/bin"
 
 set -xg PYTHONPATH "/Users/Vladimir_Burdukov/.usd/lib/python"
 set -xg RUST_SRC_PATH "$(rustc --print sysroot)/lib/rustlib/src/rust/src"
