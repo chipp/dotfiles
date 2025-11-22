@@ -20,6 +20,7 @@ config.harfbuzz_features = { "ss13" }
 config.scrollback_lines = 30000
 config.tab_bar_at_bottom = true
 config.native_macos_fullscreen_mode = true
+config.window_close_confirmation = 'NeverPrompt'
 
 config.window_padding = {
     left = '1px',
