@@ -19,7 +19,7 @@ git clone git@github.com:chipp/configs ~/configs
 
 ```shell
 brew doctor
-brew install 1password-cli colima coreutils docker docker-buildx docker-completion docker-compose docker-credential-helper fish fsnotes git git-lfs gpg hub imagemagick jq midnight-commander mosh mosquitto node pinentry-mac provisionql python xcinfo
+brew install 1password-cli automake awscli bat bazel cloudflared cmake colima coreutils docker docker-buildx docker-completion docker-compose docker-credential-helper fish fsnotes fzf gh git git-filter-repo git-lfs gnupg go gpg htop imagemagick jq lima-additional-guestagents meson midnight-commander mint mosh nmap node parallel pinentry-mac pnpm prettier provisionql python rclone sevenzip tree uv wget xcbeautify xcinfo
 ```
 
 ## [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
