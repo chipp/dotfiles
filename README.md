@@ -29,6 +29,10 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 rsync --progress ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/configs/.gitconfig ~/dotfiles/.gitignore_global ~/
 
 mkdir -p ~/.config
+
+rsync --progress -r ~/dotfiles/fish ~/.config
+fish_config theme choose my_default
+
 rsync --progress -r ~/dotfiles/omf ~/.config/
 ```
 
@@ -88,6 +92,10 @@ mkdir -p ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 
 cp -r ~/configs/Library/Application\ Support/Sublime\ Text/Packages/User/* ~/Library/Application\ Support/Sublime\ Text/Packages/User/
 cp -r ~/configs/Library/Application\ Support/Sublime\ Merge/Packages/User/* ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
+
+mkdir -p ~/.local/bin
+ln -s /Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge ~/.local/bin/
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/.local/bin/
 ```
 
 # additional links
