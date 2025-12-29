@@ -19,6 +19,8 @@ else
     set -Ux EDITOR 'subl -w'
 end
 
+fish_config theme choose my_default
+
 set -xg fish_cursor_default underscore
 set -xg theme_color_scheme terminal
 set -xg theme_nerd_fonts yes
