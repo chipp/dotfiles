@@ -18,22 +18,23 @@ echo 'LANG="en_US.UTF-8"' | sudo tee /etc/default/locale
 ## Packages
 
 ```shell
-sudo apt install -y gpg jq mc mosh vim curl
+sudo apt install -y ca-certificates curl gpg jq lsb-release mc mosh vim
+sudo mkdir -p --mode=0755 /usr/share/keyrings
 
-if [ $(lsb_release -si) == "Debian" ]; then
-    echo "deb https://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_$(lsb_release -sr)/ /" | sudo tee /etc/apt/sources.list.d/shells:fish:release:3.list;
-    curl -fsSL "https://download.opensuse.org/repositories/shells:fish:release:3/Debian_$(lsb_release -sr)/Release.key" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish_release_3.gpg > /dev/null;
-elif [ $(lsb_release -si) == "Ubuntu" ]; then
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/fish.gpg] https://ppa.launchpadcontent.net/fish-shell/release-3/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/fish-shell.list > /dev/null;
-    sudo gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/fish.gpg   --keyserver keyserver.ubuntu.com --recv-keys 59FDA1CE1B84B3FAD89366C027557F056DC33CA5;
+if [ "$(lsb_release -si)" = "Debian" ]; then
+    fish_debian_version="$(lsb_release -sr)"
+    echo "deb [signed-by=/usr/share/keyrings/shells_fish_release_4.gpg] http://download.opensuse.org/repositories/shells:/fish:/release:/4/Debian_${fish_debian_version}/ /" | sudo tee /etc/apt/sources.list.d/shells:fish:release:4.list
+    curl -fsSL "https://download.opensuse.org/repositories/shells:fish:release:4/Debian_${fish_debian_version}/Release.key" | sudo gpg --dearmor --yes -o /usr/share/keyrings/shells_fish_release_4.gpg
+elif [ "$(lsb_release -si)" = "Ubuntu" ]; then
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/fish.gpg] https://ppa.launchpadcontent.net/fish-shell/release-4/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/fish-shell.list > /dev/null
+    sudo gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/fish.gpg --keyserver keyserver.ubuntu.com --recv-keys 88421E703EDC7AF54967DED473C9FCC9E2BB48DA
 else
-    exit -1
+    exit 1
 fi
 
-sudo mkdir -p --mode=0755 /usr/share/keyrings
 curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
 
-echo "deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
+echo "deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared any main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
 
 sudo apt update
 sudo apt install -y fish cloudflared
