@@ -63,6 +63,10 @@ copy() {
 
     info "Copying oh-my-fish configuration"
     cp -r $HOME/.config/omf ./
+
+    info "Copying fish configuration"
+    mkdir -p ./fish/themes
+    cp -r $HOME/.config/fish/themes/. ./fish/themes/
 }
 
 commit() {

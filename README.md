@@ -48,11 +48,12 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 ```
 
 ```shell
-fish_config theme save "fish default"
 cp -r ~/dotfiles/.dir_colors ~/dotfiles/.gemrc ~/dotfiles/.gitconfig ~/dotfiles/.gitignore_global ~/
 mkdir -p ~/.config
+cp -r ~/dotfiles/fish ~/.config/
 cp -r ~/dotfiles/omf ~/.config/
 omf install
+fish_config theme choose my_default
 omf reload
 ```
 
