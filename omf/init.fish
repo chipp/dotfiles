@@ -1,6 +1,6 @@
 rvm default
 
-alias ls='gls --color=auto'
+alias ls='eza'
 alias git="gitext"
 alias s='subl'
 alias killsim="launchctl remove com.apple.CoreSimulator.CoreSimulatorService"
@@ -31,6 +31,7 @@ set -xg GPG_TTY
 set -xg LC_ALL en_US.UTF-8
 set -xg LANG en_US.UTF-8
 
+fish_add_path -a "/opt/homebrew/bin"
 fish_add_path -a "/opt/homebrew/sbin"
 fish_add_path -a "$HOME/.cargo/bin"
 fish_add_path -a "$HOME/.local/bin"

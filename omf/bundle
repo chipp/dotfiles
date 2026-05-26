@@ -1,11 +1,11 @@
 package brew
 package cd
 package https://github.com/aohorodnyk/fish-autovenv
+package https://github.com/chipp/bobthestarship
 package rustup
 package rvm
 package sublime
 package xcode
 package z
 theme agnoster
-theme bobthefish
 theme default
