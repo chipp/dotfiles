@@ -1,11 +1,12 @@
 rvm default
 
-alias ls='eza'
-alias git="gitext"
-alias s='subl'
-alias killsim="launchctl remove com.apple.CoreSimulator.CoreSimulatorService"
-alias sm="smerge ."
+alias cat="bat"
 alias ds="docker compose"
+alias git="gitext"
+alias killsim="launchctl remove com.apple.CoreSimulator.CoreSimulatorService"
+alias ls='eza'
+alias s='subl'
+alias sm="smerge ."
 
 if test -e ~/.dir_colors
     eval (gdircolors -c ~/.dir_colors)
