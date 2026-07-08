@@ -28,7 +28,6 @@ brew install 1password-cli \
     colima \
     docker \
     docker-buildx \
-    docker-completion \
     docker-compose \
     docker-credential-helper \
     eza \
