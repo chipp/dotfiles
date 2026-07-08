@@ -51,7 +51,6 @@ brew install 1password-cli \
     nmap \
     parallel \
     pinentry-mac \
-    pnpm \
     prettier \
     rclone \
     ripgrep \
