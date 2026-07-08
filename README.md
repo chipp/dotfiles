@@ -75,6 +75,8 @@ rsync --progress -r ~/dotfiles/fish ~/.config
 fish_config theme choose my_default
 
 rsync --progress -r ~/dotfiles/omf ~/.config/
+omf install
+omf reload
 ```
 
 ## [wezterm](https://github.com/wezterm/wezterm)
